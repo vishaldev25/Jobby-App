@@ -1,0 +1,122 @@
+.navbar-container {
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1110px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.website-logo {
+  width: 110px;
+}
+@media screen and (min-width: 568px) {
+  .website-logo {
+    width: 165px;
+  }
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-end;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav-links {
+  font-family: 'Roboto';
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+}
+.navbar-logout-desktop {
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 567px) {
+  .navbar-logout-desktop {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+}
+.navbar-mobile-button {
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  background: transparent;
+}
+@media screen and (min-width: 568px) {
+  .navbar-mobile-button {
+    display: none;
+  }
+}
+
+.nav-menu-list-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.nav-mobile-menu {
+  display: flex;
+  align-items: center;
+}
+.nav-menu-item-mobile {
+  margin: 0px;
+  cursor: pointer;
+}
+.work-icon {
+  height: 30px;
+  width: 50px;
+  color: #ffffff;
+}
+.home-icon {
+  height: 30px;
+  width: 50px;
+  color: #ffffff;
+}
+.logout-icon {
+  height: 30px;
+  width: 50px;
+  color: #ffffff;
+}
+@media screen and (min-width: 568px) {
+  .nav-mobile-menu {
+    display: none;
+  }
+}
